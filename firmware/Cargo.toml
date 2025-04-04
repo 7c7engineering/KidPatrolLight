@@ -3,4 +3,18 @@ name = "kids-patrol-light"
 version = "0.1.0"
 edition = "2024"
 
+# [build]
+# build = "build.rs"
+
 [dependencies]
+embedded-hal = "0.2.3"
+panic-halt = "0.2"
+# using a fork of avr-device to support attiny1606, it is added via a git submodule
+avr-device = { path = "../crates/avr-device/", features = ["attiny1606"] }
+avr-device-macros = { path = "../crates/avr-device/macros/" }
+
+[profile.release]
+codegen-units = 1
+lto = "fat"
+opt-level = "s"
+panic = "abort"
