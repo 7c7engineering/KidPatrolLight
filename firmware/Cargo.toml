@@ -3,9 +3,6 @@ name = "kids-patrol-light"
 version = "0.1.0"
 edition = "2024"
 
-# [build]
-# build = "build.rs"
-
 [dependencies]
 embedded-hal = "0.2.3"
 panic-halt = "0.2"

@@ -3,5 +3,7 @@ default:
     @echo "Hello! Run 'just --list' to see available commands"
 
 build:
+    git submodule update --init --recursive
+    cd ../crates/avr-device/ && make
     cargo build --release
     # Build succeeded
