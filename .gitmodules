@@ -1,0 +1,3 @@
+[submodule "crates/avr-device"]
+	path = crates/avr-device
+	url = https://github.com/hammerlink/avr-device
