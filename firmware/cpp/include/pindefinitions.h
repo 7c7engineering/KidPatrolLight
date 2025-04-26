@@ -1,0 +1,9 @@
+#include "avr/io.h"
+
+// PSU_BOOTSTRAP = PA6
+#define PORT_PSU_BOOTSTRAP PORTA
+#define PIN_PSU_BOOTSTRAP PIN6_bm
+
+// USER_BUTTON = PA7
+#define PORT_USER_BUTTON PORTA
+#define PIN_USER_BUTTON PIN7_bm
